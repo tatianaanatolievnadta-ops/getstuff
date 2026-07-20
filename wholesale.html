@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оптовым покупателям — GETSTUFF</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page-header">
+    <h1 class="page-header__title">Оптовым покупателям</h1>
+    <div class="page-header__breadcrumb">
+      <a href="index.html">Главная</a> / <span>Опт</span>
+    </div>
+  </div>
+
+  <div class="container wholesale-page">
+    <section class="wholesale-intro">
+      <p class="wholesale-intro__text">
+        GETSTUFF работает с розничными и оптовыми клиентами. Войдите как оптовый покупатель,
+        чтобы видеть цены по коробкам, скачать полный прайс-лист и оформлять заказы на выгодных условиях.
+      </p>
+    </section>
+
+    <section class="wholesale-block">
+      <h2 class="section__title" style="margin-bottom:16px">Тарифы</h2>
+      <div id="wholesale-tiers"></div>
+    </section>
+
+    <section class="wholesale-block">
+      <div id="wholesale-login"></div>
+    </section>
+
+    <section class="wholesale-block wholesale-contacts">
+      <h2 class="section__title" style="margin-bottom:12px">Индивидуальные условия</h2>
+      <p class="wholesale-intro__text">
+        По вопросам крупного опта и постоянного сотрудничества свяжитесь с менеджером:
+        <a href="mailto:metiz@гетстафф.рф">metiz@гетстафф.рф</a>,
+        <a href="tel:+79119103344">+7 (911) 910-33-44</a>
+      </p>
+    </section>
+  </div>
+
+  <script src="js/products.data.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/wholesale.js"></script>
+  <script src="js/delivery.js"></script>
+  <script src="js/prices.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/components.js"></script>
+  <script>
+    renderLayout();
+    initWholesalePage();
+    updateWholesaleUI();
+  </script>
+</body>
+</html>

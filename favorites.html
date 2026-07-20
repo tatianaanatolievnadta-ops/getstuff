@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Избранное — GETSTUFF</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page-header">
+    <h1 class="page-header__title">Избранное</h1>
+    <div class="page-header__breadcrumb">
+      <a href="index.html">Главная</a> / <span>Избранное</span>
+    </div>
+  </div>
+
+  <div class="catalog-layout">
+    <main style="grid-column:1/-1">
+      <div class="products-grid" id="favorites-grid"></div>
+    </main>
+  </div>
+
+  <script src="js/products.data.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/wholesale.js"></script>
+  <script src="js/prices.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/components.js"></script>
+  <script>
+    renderLayout();
+    initFavoritesPage();
+  </script>
+</body>
+</html>

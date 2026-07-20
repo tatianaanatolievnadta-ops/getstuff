@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GETSTUFF — Крепёж, которому можно доверять</title>
+  <meta name="description" content="Интернет-магазин GETSTUFF. Саморезы кровельные, по дереву, по металлу, гвозди. Российский бренд строительного крепежа.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Hero-слайдер -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__slide" id="hero-slide"></div>
+      <div class="hero__dots" id="hero-dots"></div>
+    </div>
+  </section>
+
+  <!-- Рекламные баннеры (1–2 ряда) -->
+  <section class="promo-row">
+    <div class="container">
+      <div class="promo-row__scroll" id="promo-banners"></div>
+    </div>
+  </section>
+
+  <!-- Горячие предложения -->
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Только до 26.07:</h2>
+        <a href="catalog.html" class="section__link">Успей купить →</a>
+      </div>
+      <div class="products-scroll" id="hot-products"></div>
+    </div>
+  </section>
+
+  <!-- Категории (крупные плитки с фото, как Порядок) -->
+  <section class="section" style="background:var(--white)">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Каталог</h2>
+        <a href="catalog.html" class="section__link">Все товары →</a>
+      </div>
+      <div class="categories-scroll" id="categories-grid"></div>
+    </div>
+  </section>
+
+  <!-- Товары с вкладками: Хиты / Акции / Новинки -->
+  <section class="section" id="products">
+    <div class="container">
+      <div class="product-tabs">
+        <button class="product-tab active" data-tab="hits">Хиты продаж</button>
+        <button class="product-tab product-tab--sale" data-tab="sale">Акции</button>
+        <button class="product-tab" data-tab="new">Новинки</button>
+      </div>
+      <div class="products-grid" id="tab-products"></div>
+      <div style="text-align:center;margin-top:20px">
+        <a href="catalog.html" class="btn btn--outline">Показать ещё</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Преимущества (с сайта гетстафф.рф) -->
+  <section class="section" style="background:var(--white)">
+    <div class="container">
+      <div class="usp-grid">
+        <div class="usp-card">
+          <div class="usp-card__icon">💰</div>
+          <div class="usp-card__title">Выгодные цены</div>
+          <div class="usp-card__text">Конкурентные цены при отличном качестве</div>
+        </div>
+        <div class="usp-card">
+          <div class="usp-card__icon">📦</div>
+          <div class="usp-card__title">Актуальный ассортимент</div>
+          <div class="usp-card__text">Постоянное пополнение линейки</div>
+        </div>
+        <div class="usp-card">
+          <div class="usp-card__icon">🔩</div>
+          <div class="usp-card__title">Качественный крепёж</div>
+          <div class="usp-card__text">Прочные саморезы для любых работ</div>
+        </div>
+        <div class="usp-card">
+          <div class="usp-card__icon">⭐</div>
+          <div class="usp-card__title">Хорошие отзывы</div>
+          <div class="usp-card__text">Высокие оценки на маркетплейсах</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Опт -->
+  <section class="section" id="wholesale">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Оптовым покупателям</h2>
+        <a href="wholesale.html" class="section__link">Подробнее →</a>
+      </div>
+      <p style="font-size:0.875rem;color:var(--gray-600);line-height:1.7;margin-bottom:16px">
+        Розница до 20 000 ₽ · Опт от 20 000 ₽ · Крупный опт от 100 000 шт.
+        Скачайте прайс или войдите как оптовик для просмотра цен по коробкам.
+      </p>
+      <div id="wholesale-section-content"></div>
+    </div>
+  </section>
+
+  <!-- Доставка -->
+  <section class="section" id="delivery">
+    <div class="container">
+      <h2 class="section__title" style="margin-bottom:16px">Доставка Ozon</h2>
+      <div class="delivery-info delivery-info--page">
+        <div class="delivery-info__header">
+          <span class="delivery-info__logo">Ozon</span>
+          <span class="delivery-info__title">Доставка через Ozon</span>
+        </div>
+        <p class="delivery-info__text">
+          Отправляем заказы через логистику <strong>Ozon</strong> — до пункта выдачи или курьером.
+          Стоимость и срок рассчитываются автоматически в корзине при указании города.
+          <br><strong>Отправка — по пятницам.</strong> Точную дату согласуйте с менеджером.
+        </p>
+        <div id="delivery-zones"></div>
+      </div>
+      <p style="font-size:0.875rem;color:var(--gray-600);line-height:1.7;margin-top:16px">
+        Оформление на сайте — через заявку менеджеру. Также осуществляем оптовые продажи:
+        <a href="mailto:metiz@гетстафф.рф" style="color:var(--green-bright)">metiz@гетстафф.рф</a>,
+        <a href="tel:+79119103344" style="color:var(--green-bright)">+7 (911) 910-33-44</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- О компании -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about">
+        <div>
+          <h2 class="section__title" style="margin-bottom:12px">О компании</h2>
+          <p class="about__text">
+            ТМ «Getstuff» — новый активно развивающийся российский бренд качественных товаров
+            для ремонта и строительства. Надёжный крепёж для ваших успешных проектов.
+            Понятные инструкции, продуманная упаковка и оперативная отправка заказов.
+          </p>
+        </div>
+        <div class="about__visual">
+          <img src="" alt="GETSTUFF" id="about-img" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius)" onerror="this.parentElement.textContent='🔩'">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter__title">Будьте в курсе новинок и акций</div>
+      <div class="newsletter__text">Подпишитесь и получите скидку 5% на первый заказ</div>
+      <form class="newsletter__form" id="newsletter-form">
+        <input type="email" placeholder="Ваш email" required>
+        <button type="submit" class="btn btn--accent">Подписаться</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="js/products.data.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/wholesale.js"></script>
+  <script src="js/delivery.js"></script>
+  <script src="js/prices.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/components.js"></script>
+  <script>
+    renderLayout();
+    initHomePage();
+    document.getElementById('about-img').src = getWbImage(848081947);
+  </script>
+</body>
+</html>

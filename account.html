@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет — GETSTUFF</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="account-page">
+    <div class="account-header">
+      <div class="account-header__name">Иван Петров</div>
+      <div class="account-header__email">ivan@example.com</div>
+      <div class="account-bonus">
+        <span class="account-bonus__label">🎁 Бонусные баллы</span>
+        <span class="account-bonus__value">350 ₽</span>
+      </div>
+    </div>
+
+    <div class="account-menu">
+      <a href="#orders" class="account-menu__item">
+        <span class="account-menu__icon">📦</span>
+        <span>Мои заказы</span>
+      </a>
+      <a href="favorites.html" class="account-menu__item">
+        <span class="account-menu__icon">♡</span>
+        <span>Избранное</span>
+      </a>
+      <a href="#" class="account-menu__item">
+        <span class="account-menu__icon">📍</span>
+        <span>Адреса доставки</span>
+      </a>
+      <a href="#" class="account-menu__item">
+        <span class="account-menu__icon">⚙️</span>
+        <span>Настройки</span>
+      </a>
+    </div>
+
+    <h2 class="section__title" id="orders" style="margin-bottom:12px">История заказов</h2>
+    <div id="orders-list"></div>
+  </div>
+
+  <script src="js/products.data.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/wholesale.js"></script>
+  <script src="js/prices.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/components.js"></script>
+  <script>
+    renderLayout();
+    initAccountPage();
+  </script>
+</body>
+</html>
